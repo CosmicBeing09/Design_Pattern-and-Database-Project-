@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodRequestDataEntry_Amout">
+
+    <TextView
+        android:id="@+id/t00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="REQUEST FORM"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t00"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:text="ENTER HOW MANY PEOPLE CAN EAT APPROXIMATELY:"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/t2"
+        android:id="@+id/Amount"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:hint="   Person"
+        android:padding="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/Amount_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/right_arrow64"
+        android:layout_below="@+id/Amount"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="290dp"
+        />
+    <ImageButton
+
+        android:id="@+id/Amount_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_arrow"
+        android:layout_below="@+id/Amount"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+</RelativeLayout>

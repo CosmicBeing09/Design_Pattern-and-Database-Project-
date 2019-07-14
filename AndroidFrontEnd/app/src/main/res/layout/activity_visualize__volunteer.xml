@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Visualize_Volunteer"
+    android:background="@drawable/android_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:elevation="10dp"
+        android:background="#fff"
+        android:layout_margin="10dp"
+        android:id="@+id/map_relative2"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/radius"
+            android:layout_margin="10dp"
+            android:id="@+id/search_radiusImage"
+            />
+        <EditText
+            android:layout_toRightOf="@+id/search_radiusImage"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:hint="Search Radius in Km"
+            android:id="@+id/search_radius"
+            android:inputType="numberDecimal"
+            />
+        <ImageButton
+            android:layout_toRightOf="@id/search_radius"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/new_search"
+            android:contentDescription="TODO"
+            android:background="#fff"
+            android:id="@+id/search_imageButton"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/map_relative2"
+        android:elevation="10dp"
+        android:layout_marginLeft="280dp"
+        >
+        <Switch
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textOff="Map"
+            android:text="Map"
+            android:textColor="#4c0be3"
+            android:shadowColor="@color/colorAccent"
+            android:textOn="Info"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/viewSwitch"/>
+    </RelativeLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        tools:context=".Locate_Volunteer_Map" />
+
+    <Button
+        android:id="@+id/createPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE POST"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="130dp"
+        android:background="#a7f5ee"
+        />
+</RelativeLayout>

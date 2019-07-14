@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="7dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/FoodRequest_Location"
+                    android:layout_width="222dp"
+                    android:layout_height="28dp"
+                    android:text="Lakecity,Niharipara"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/FoodRequest_Amount"
+                android:layout_width="306dp"
+                android:layout_height="24dp"
+                android:text="Food For 10 people"
+                android:textSize="15dp"
+                android:layout_marginLeft="55dp"
+                />
+
+            <TextView
+                android:id="@+id/FoodRequest_PhoneNo"
+                android:layout_width="305dp"
+                android:layout_height="21dp"
+                android:text="01825606036"
+                android:textSize="15dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginBottom="3dp"
+                />
+
+            <!--<TextView-->
+                <!--android:id="@+id/FoodRequest_Description"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Food Description"-->
+                <!--android:layout_marginLeft="55dp"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/FoodRequest_PickUpTime"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Pick Up Time"-->
+                <!--android:layout_marginLeft="55dp"-->
+                <!--/>-->
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

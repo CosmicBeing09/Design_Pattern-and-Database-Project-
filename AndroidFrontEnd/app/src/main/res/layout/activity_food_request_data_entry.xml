@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodRequestDataEntry">
+
+    <TextView
+        android:id="@+id/t0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+
+        android:text="REQUEST FORM"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t0"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+
+        android:text="ENTER YOUR LOCATION:"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/t1"
+        android:id="@+id/FoodRequestEntry_Location"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:hint="   Location"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FoodRequestEntry_Location"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="HOW MANY PEOPLE CAN EAT?"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/FoodRequestEntry_Amount"
+        android:layout_below="@+id/t2"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:hint="   Quantity"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FoodRequestEntry_Amount"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="HOW LONG IT WILL STAY FRESH(HOURS)?"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t3"
+        android:id="@+id/FoodRequestEntry_ExpiaryTime"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:hint="     Expiary Time"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FoodRequestEntry_ExpiaryTime"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="BRIEF DESCRIPTION OF YOUR FOOD"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/t4"
+        android:id="@+id/FoodRequestEntry_FoodDesc"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+
+        android:hint="  Description"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FoodRequestEntry_FoodDesc"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Volunteer Needed: "
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/t6"
+        android:id="@+id/FoodRequestEntry_VolunteerNeede"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:hint="      Person"
+
+        />
+
+    <!--<Button-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/FoodRequestEntry_VolunteerNeede"-->
+        <!--android:text="NEXT"-->
+        <!--android:id="@+id/FoodRequestEntry_Next"-->
+        <!--android:layout_marginLeft="130dp"-->
+        <!--android:background="@drawable/rounded_button2"-->
+        <!--/>-->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FoodRequestEntry_VolunteerNeede"
+        android:background="@drawable/right_arrow64"
+        android:id="@+id/FoodRequestEntry_Next"
+
+        />
+
+</RelativeLayout>

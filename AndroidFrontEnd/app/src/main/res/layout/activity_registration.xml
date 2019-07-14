@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:id="@+id/Register_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name/Title *"
+            android:textSize="20dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_post2"
+            android:padding="5dp"
+            android:drawablePadding="15dp"
+            />
+        <!--android:textColor="@android:color/white" />-->
+
+
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/Register_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_post2"
+            android:padding="5dp"
+            android:drawablePadding="15dp"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/Register_Contno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Conatact Number"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_post2"
+            android:padding="5dp"
+            android:drawablePadding="15dp"/>
+
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/Register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_post2"
+            android:padding="5dp"
+            android:drawablePadding="15dp"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/Register_CPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Confirm Password"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:background="@drawable/edit_text_post2"
+            android:padding="5dp"
+            android:drawablePadding="15dp"/>
+        <!--android:textColor="@android:color/white" />-->
+
+
+        <Button
+            android:id="@+id/Register_Button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/rounded_button2"
+            android:text="Register"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+
+        <!-- Link to Login Screen -->
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
